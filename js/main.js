@@ -1,3 +1,4 @@
+
 function productos($categoria) {
 
     switch ($categoria) { // a través del switch vemos que array se va a armar
@@ -307,23 +308,21 @@ function productos($categoria) {
     $caja.innerHTML = ""; // vaciamos todo el contenido que haya 
 
     //A traves de FOR creamos los card.
-  
     for (let i = 0; i < $productos.length; i++) {
         $caja.innerHTML +=
-        '<div class="col-lg-3 col-md-6 col-sm-12 ">' +
+        '<div class="col-sm-12 col-md-6 col-lg-3 border-primary mb-3 ">' +
                 '<div class="card">' +
-                    '<img src="' + $productos[i].url + '" class="card-img-top " alt="...">' +
+                    '<img src="' + $productos[i].url + '" class="card-img-top" alt="...">' +
                     '<div class="card-body">' +
-                        '<h5 class="card-title text-center">' + $productos[i].titulo + '</h5>' +
-                        '<strong><p class="card-text text-center " >' + $productos[i].precio + '</p></strong>' +
+                        '<h5 class="card-title text-center" style="  font-size: 18px;">' + $productos[i].titulo + '</h5>' +
+                        '<strong><p class="card-text text-center">' + $productos[i].precio + '</p></strong>' +
                         '<div  class="d-flex justify-content-center ">'+
-                        '<a href="https://wa.me/5491138540419"class="btn btn-primary" target="_blank" style="font-size: 15px;height: 35px;">COMPRAR</a>'+
-                        '</div>'
+                        '<a href="https://wa.me/541138540419"class="btn btn-primary" target="_blank" style="font-size: 15px;height: 35px;">COMPRAR</a>'
                     '</div>' +
                 '</div>' +
+                '<div>' +
             '</div>';
     }
 
 
 }
-
