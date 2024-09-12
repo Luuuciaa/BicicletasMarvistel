@@ -9,7 +9,10 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
   <script src="js/main.js"></script>
-
+ 
+  <!--FAVICON-->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -60,8 +63,9 @@
           
           <!--BARRA DE BÚSQUEDA-->
             <form class="d-flex ms-auto" role="search">
-              <input class="form-control me-2 " type="search" placeholder="¿Qué estás buscando?" aria-label="Search" >
+              <input class="form-control me-2 " id="searchInput"type="search" placeholder="¿Qué estás buscando?" aria-label="Search" >
               <button class="btn btn-outline-primary " type="submit" style="font-size: 15px;height: 40px; ">BUSCAR</button>
+              <ul id="resultsList" class="results-list"></ul>
             </form>
         <!--REGISTRO DE USUARIOS-->
         <!--
@@ -212,8 +216,8 @@
     </article>
     <article class="col-sm-12 col-md-6 col-lg-3 border-primary mb-3">
       <div class="card">
-        <img src="img/Playera contrapedal Marvistel R29.png" class="card-img-top img-fluid" alt="Playera contrapedal Marvistel R29" onclick="productos('marvistel')">
-        <div class="card-body ">
+        <img src="img/Playera Marvistel R29.png" class="card-img-top img-fluid" alt="Playera contrapedal Marvistel R29" onclick="productos('marvistel')">
+        <div class="card-body  ">
           <div class="text-center">
               <p class="card-text ">Playera contapedal Marvistel R29 </p>
             <strong>

@@ -4,7 +4,11 @@ html{
     font-family:Arial, Helvetica, sans-serif;
    margin:0;
    padding: 0;
+<<<<<<< Updated upstream
  overflow-x: hidden; /*Evita el scroll horizontal*/
+=======
+   overflow-x: hidden; /*Evita el scroll horizontal*/
+>>>>>>> Stashed changes
 }
 
 h1 {
@@ -144,11 +148,12 @@ a {
 
 /*BICICLETAS MARVISTEL*/
 .card {
-    height: 90%;
+   height: 90%;
     border: 1px black solid;
     margin: 15px;
     margin-bottom: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Añade una pequeña transición para un efecto al pasar el ratón */
+   
 }
 
 .card:hover {
@@ -160,9 +165,11 @@ a {
 .card-body {
     height: auto;
     /* hace que todas las tarjetas tengan la misma altura para el texto*/
+
 }
 
 .card-text {
+  
     font-size: 18px;
     margin: 0;
     /* Elimina el margen para asegurar que el texto esté alineado correctamente */
@@ -171,6 +178,13 @@ a {
 
 .card a {
     margin-right: 4px;
+   
+}
+.card-img-top {
+    width: 100%; /* La imagen ocupará todo el ancho disponible */
+    height: auto; /* Ajusta la altura automáticamente manteniendo la proporción */
+    object-fit: cover; /* Recorta la imagen para que llene el contenedor */
+   
 }
 
 .marcas {
