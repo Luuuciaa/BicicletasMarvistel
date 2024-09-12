@@ -141,9 +141,9 @@ function productos($categoria) {
                     "precio": "$ 202.000"
                 },
                 {
-                    "titulo": "Playera  Marvistel R29",
-                    "url": "img/Playera Marvistel R29.png",
-                    "precio": "$ 205.000"
+                    "titulo": "Paseo Marvistel R16",
+                    "url": "img/Paseo Marvistel R16.png",
+                    "precio": "$ 180.000"
                 },
                 {
                     "titulo": "Tricicargo Marvistel R20",
