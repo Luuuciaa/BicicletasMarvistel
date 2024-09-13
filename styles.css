@@ -99,10 +99,11 @@ a {
 }
 /*IMAGENES DEL CARRUSEL*/
 .d-block {
-    width:100%;
+    width:auto;
     height: auto;/* Permite que la altura se ajuste automáticamente */
     max-height: 600px; /* Ajusta la altura máxima según sea necesario */
     object-fit: cover; /* Recorta las imágenes para que se ajusten  sin distorsionarse */
+    
 }
 
 .presentacion p {
@@ -207,7 +208,7 @@ a {
     float: left;
     padding:15px;
     width: 700px;
-   
+
 }
 section p {
    margin:20px;
