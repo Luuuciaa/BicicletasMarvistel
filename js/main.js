@@ -11,7 +11,7 @@ function productos($categoria) {
                 },
                 {
                     "titulo": "Venzo Frida Belle R29",
-                    "url": "img/Venzo Frida Belle R29 c.png",
+                    "url": "img/Venzo Frida Belle R29 (1).png",
                     "precio": "$ 481.000"
                 },
                 {
@@ -113,7 +113,7 @@ function productos($categoria) {
                 },
                 {
                     "titulo": "Raleigh MXR R20 ",
-                    "url": "img/Raleigh MXR R20 c.png",
+                    "url": "img/Raleigh MXR R20 (1).png",
                     "precio": "$ 240.000"
                 },
                 {
