@@ -319,7 +319,7 @@ function productos($categoria) {
                         '<h5 class="card-title text-center" style="  font-size: 18px;">' + $productos[i].titulo + '</h5>' +
                         '<strong><p class="card-text text-center">' + $productos[i].precio + '</p></strong>' +
                         '<div  class="d-flex justify-content-center ">'+
-                        '<a href="https://wa.me/541138540419"class="btn btn-primary" target="_blank" style="font-size: 15px;height: 35px;">COMPRAR</a>'
+                        '<button class="btn btn-primary"  style="font-size: 17px;height: 42px;"><img src="img/carro-de-la-compra.png" alt="carrito de compras" class="carrito-img">Agregar</button>'+
                     '</div>' +
                 '</div>' +
                 '<div>' +
@@ -329,4 +329,13 @@ function productos($categoria) {
 
 }
  
+document.getElementById('formulario-contacto').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevenir el envío del formulario para demostración
+    // Aquí puedes hacer lo que necesites, como enviar datos a un servidor
 
+    // Mostrar la alerta
+    alert('Formulario enviado con éxito!');
+    
+    // Si deseas restablecer el formulario después de la alerta, puedes hacerlo aquí
+    this.reset(); // Restablecer el formulario
+});

@@ -14,6 +14,38 @@ h1 {
     padding: 15px;
     font-size: 40px;
 }
+
+.carrito a {
+    color:white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+.carrito a:hover {
+    color:rgb(65, 41, 153)  !important;
+}
+
+.carrito-img {
+    margin-right: 5px; /* Espacio entre la imagen y el texto */
+    width: 30px; 
+    height: 36px; 
+    filter: brightness(0) invert(1); /* Cambia la imagen a blanco */
+}
+.verificacion {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*TABLA*/
+tr th {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+
+}
+.table {
+   width: 50%;
+   margin: 0 auto; /* Centra la tabla */
+ 
+}
 /*ICONO DE WHATSAPP*/
 .whatsapp-button {
     position: fixed;/* se mantiene fijo en la pantalla, incluso cuando se desplaza*/
@@ -97,6 +129,7 @@ a {
 .btn:hover {
     background-color: rgb(65, 41, 153) !important;
 }
+
 /*IMAGENES DEL CARRUSEL*/
 .d-block {
     width:auto;
@@ -223,75 +256,6 @@ section iframe {
 }
 
 
-/*FORMULARIO INICIO DE SESIÒN*/
-
-.formulario-login form {
-    max-width: 550px; 
-    width:100%; 
-    background-color:rgb(185, 185, 235) ; 
-}
-.formulario-login label {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 18px;
- }
- .formulario-login input {
-    width: 100%;
-}
-.datos {
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-}
-.formulario-login a {
-    font-weight: bold;
-    color: black;
-    text-decoration: underline;
-    padding-left: 5px; 
-
-}
-.formulario-login a:hover {
-    color:rgb(65, 41, 153);
-}
-.iniciar-sesion{
-    width: 100%;
-   
-}
-/*FORMULARIO CREAR CUENTA*/
-
-.compra {
-    font-size: 18px;
-}
-
-.formulario-crear-cuenta form {
-    max-width: 550px; 
-    width:100%; 
-    background-color:rgb(185, 185, 235) ; 
-}
-.formulario-crear-cuenta label {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 18px;
- }
- .formulario-crear-cuenta input {
-    width: 100%;
-}
-.crear-cuenta {
-    width: 100%;
-}
-/*CREAR CUENTA TEXTO*/
-.compra {
-    text-align: center;
-    
-}
-
-.formulario-crear-cuenta a {
-    font-weight: bold;
-    color: black;
-    text-decoration: underline;
-    padding-left: 5px; 
-}
-.formulario-crear-cuenta a:hover {
-    color:rgb(65, 41, 153);
-}
 
 
 /*FORMULARIO DE CONTACTO*/
@@ -299,7 +263,7 @@ section iframe {
 .formulario-contacto form {
     max-width: 550px; 
     width:100%; 
-    background-color:rgb(185, 185, 235) ; 
+     
 }
 .formulario-contacto label {
  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -328,7 +292,21 @@ section iframe {
    
   }
 
+  /*FOMULARIO CARRITO*/
+ 
+  .formulario-carrito form {
+    max-width: 550px; 
+    width:100%; 
+    
+  }
+ .formulario-carrito label {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
 
+ }
+ .formulario-carrito  input{
+  width: 100%;
+ }
 /*PIE DE PÁGINA*/
 footer {
     background-color: rgb(150, 150, 233);
