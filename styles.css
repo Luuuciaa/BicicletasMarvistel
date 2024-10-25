@@ -179,7 +179,7 @@ a {
 
 /*BICICLETAS MARVISTEL*/
 .card {
-   height: 90%;
+   height: 95%;
     border: 1px black solid;
     margin: 15px;
     margin-bottom: 30px;
@@ -196,7 +196,6 @@ a {
 .card-body {
     height: auto;
     /* hace que todas las tarjetas tengan la misma altura para el texto*/
-
 }
 
 .card-text {
@@ -217,7 +216,10 @@ a {
     object-fit: cover; /* Recorta la imagen para que llene el contenedor */
    
 }
-
+.card button {
+    margin-top: 15px;
+    
+}
 .marcas {
     width: 97%;
 }

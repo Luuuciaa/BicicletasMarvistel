@@ -9,7 +9,8 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
   <script src="js/main.js"></script>
- 
+  <script src="js/carrito.js"></script>
+
   <!--FAVICON-->
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
@@ -39,18 +40,18 @@
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false" style="color: white;">Bicicletas</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="index.html#productos" onclick="productos('venzo')">Venzo</a></li>
-                <li><a class="dropdown-item" href="index.html#productos" onclick="productos('spy')">Spy</a></li>
-                <li><a class="dropdown-item" href="index.html#productos" onclick="productos('raleigh')">Raleigh</a></li>
-                <li><a class="dropdown-item" href="index.html#productos" onclick="productos('moove')">Moove</a></li>
-                <li><a class="dropdown-item" href="index.html#productos" onclick="productos('ninos')">Niños</a></li>
-                <li><a class="dropdown-item" href="index.html#productos" onclick="productos('marvistel')">Marvistel</a></li>
-                <li><a class="dropdown-item" href="index.html#productos" onclick="productos('plegables')">Plagables</a></li>
-                <li><a class="dropdown-item" href="index.html#productos" onclick="productos('totem')">Tótem</a></li>
-                <li><a class="dropdown-item" href="index.html#productos" onclick="productos('skinred')">Skinred</a></li>
-                <li><a class="dropdown-item" href="index.html#productos" onclick="productos('raider')">Raider</a></li>
-                <li><a class="dropdown-item" href="index.html#productos" onclick="productos('lamborghini')">Lamborghini</a></li>
-                <li><a class="dropdown-item" href="index.html#productos" onclick="productos('shift ')">Shift </a></li>
+                <li><a class="dropdown-item" href="#productos" >Venzo</a></li>
+                <li><a class="dropdown-item" href="#productos" >Spy</a></li>
+                <li><a class="dropdown-item" href="#productos">Raleigh</a></li>
+                <li><a class="dropdown-item" href="#productos" >Moove</a></li>
+                <li><a class="dropdown-item" href="#productos" >Niños</a></li>
+                <li><a class="dropdown-item" href="#productos">Marvistel</a></li>
+                <li><a class="dropdown-item" href="#productos" >Plagables</a></li>
+                <li><a class="dropdown-item" href="#productos">Tótem</a></li>
+                <li><a class="dropdown-item" href="#productos" >Skinred</a></li>
+                <li><a class="dropdown-item" href="#productos" >Raider</a></li>
+                <li><a class="dropdown-item" href="#productos">Lamborghini</a></li>
+                <li><a class="dropdown-item" href="#productos">Shift </a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -103,14 +104,18 @@
       <tbody>
         <!-- Aquí irían las filas de productos dinámicos -->
       </tbody>
-        <tr>
-          <td colspan="3" class="text-center p-3">TOTAL</td>
-          <td class="text-center p-3">$0.00</td> <!-- Campo para el total -->
-          <td></td> <!-- Espacio vacío en la columna de "Eliminar" -->
-        </tr>
+      <tr>
+        <td colspan="3" class="text-center p-3">TOTAL</td>
+        <td class="text-center p-3">$0.00</td> <!-- Celda para el total -->
+        <td></td> <!-- Espacio vacío en la columna de "Eliminar" -->
+    </tr>
     </table>
+    
   </div>
 </div>
+
+
+
 
 <!-- FORMULARIO DE CARRITO -->
  
@@ -122,15 +127,11 @@
       <label for="exampleInputtext" class="form-label"><b>Nombre y apellido</b></label>
       <input type="text" name="nombre" class="form-control" id="exampleInputtext" placeholder="Ingresa tu nombre y apellido" required>
     </div>
-
-    <!-- Correo electrónico -->
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label"><b>Correo electrónico</b></label>
       <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa tu correo electrónico" required>
       <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
     </div>
-
-    <!-- Teléfono -->
     <div class="mb-3">
       <label for="exampleInputtel" class="form-label"><b>Teléfono</b></label>
       <input type="tel" name="teléfono" class="form-control" id="exampleInputtel" placeholder="Ingresa tu número de teléfono">
@@ -195,8 +196,6 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
-  
-  
   </body>
   
   </html>
