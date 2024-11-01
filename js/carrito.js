@@ -142,7 +142,7 @@ function simulateCompra() {
         if (result.isConfirmed) {
             Swal.fire({
                 icon: 'success',
-                title: 'Compra realizada con exito!',
+                title: '¡Compra realizada con éxito!',
                 text: '¡Gracias por su compra!'
             });
             clearCart();
