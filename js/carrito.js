@@ -8,7 +8,7 @@ function addToCart(name, price) {
     } else {
         cart.push({ name, price, quantity: 1 }); // Agregar nuevo producto
 
-        // Usar SweetAlert2 para mostrar una alerta
+        //  Mostrar  alerta cuando se agrega un producto
         Swal.fire({
             icon: 'success',
             title: 'Producto agregado',
@@ -59,23 +59,48 @@ function updateQuantity(index, quantity) {
 
 // Función para eliminar un producto del carrito
 function removeFromCart(index) {
-    if (cart[index].quantity > 1) {
-        cart[index].quantity--;
-    } else {
-        cart.splice(index, 1);
+    const itemName = cart[index].name; // Guarda el nombre del producto antes de la eliminación
 
-        // Mostrar alerta al eliminar un producto
-        Swal.fire({
-            icon: 'info',
-            title: 'Producto eliminado',
-            text: 'Producto eliminado del carrito',
-            timer: 1500,
-            showConfirmButton: false
-        });
-    }
-    localStorage.setItem("cart", JSON.stringify(cart));
-    updateCart();
+    Swal.fire({
+        title: '¿Estás seguro?',
+        text: `¿Deseas eliminar ${itemName} del carrito?`,
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Eliminar',
+        cancelButtonText: 'Cancelar'
+    }).then(result => {
+        if (result.isConfirmed) {
+            if (cart[index].quantity > 1) {
+                cart[index].quantity--;
+            } else {
+                cart.splice(index, 1);
+            }
+            
+            // Alerta de confirmación de eliminación 
+            Swal.fire({
+                icon: 'info',
+                title: 'Producto eliminado',
+                text: `${itemName} ha sido eliminado del carrito`,
+                timer: 3000,
+                showConfirmButton: false
+            });
+
+            localStorage.setItem("cart", JSON.stringify(cart));
+            updateCart();
+        } else {
+            // Alerta de cancelación de eliminación
+            Swal.fire({
+                icon: 'info',
+                title: 'Eliminación cancelada',
+                text: `${itemName} no fue eliminado del carrito`,
+                timer: 3000,
+                showConfirmButton: false
+            });
+        }
+    });
 }
+
+
 
 // Función para vaciar el carrito
 function clearCart() {
@@ -105,13 +130,13 @@ function simulateCompra() {
         totalPrice += item.price * item.quantity;
     });
 
-    // Confirmar compra con SweetAlert2
+    // Confirmar compra 
     Swal.fire({
         title: 'Confirmar compra',
         text: `El total de tu compra es $${totalPrice}. ¿Desea confirmar la compra?`,
         icon: 'question',
         showCancelButton: true,
-        confirmButtonText: 'Sí, confirmar',
+        confirmButtonText: 'Confirmar',
         cancelButtonText: 'Cancelar'
     }).then(result => {
         if (result.isConfirmed) {
