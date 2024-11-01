@@ -15,6 +15,11 @@ h1 {
     font-size: 40px;
 }
 
+.titulo {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 30px;
+    font-size: 35px;
+}
 .carrito a {
     color:white;
     font-size: 16px;
@@ -309,6 +314,75 @@ section iframe {
  .formulario-carrito  input{
   width: 100%;
  }
+
+ /*CARRITO DE COMPRAS*/
+.carritoCompra {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+}
+.products, .cart {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+.btn-vaciar ,.btn-comprar {
+    background-color: black !important;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.btn-vaciar:hover {
+    background-color: rgb(65, 41, 153) !important;
+}
+.btn-comprar:hover {
+    background-color: rgb(65, 41, 153) !important;
+}
+.total {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 19px;
+}
+.cart {
+    text-align: center;
+}
+.cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart button {
+    background-color: #dc3545;
+}
+
+.cart button:hover {
+    background-color: #c82333;
+}
+
+.cart input[type="number"] {
+    width: 50px; /* Ajusta el ancho según lo necesites */
+    margin-left: 5px; /* Espaciado a la izquierda si es necesario */
+    text-align: center;
+}
+
 /*PIE DE PÁGINA*/
 footer {
     background-color: rgb(150, 150, 233);
