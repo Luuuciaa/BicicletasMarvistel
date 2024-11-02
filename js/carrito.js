@@ -34,10 +34,14 @@ function updateCart() {
 
         const listItem = document.createElement("li");
         listItem.innerHTML = `
+        <div class="d-flex justify-content-between align-items-center w-100 ">
             ${item.name} - $${item.price} x 
-            <input type="number" min="1" value="${item.quantity}" onchange="updateQuantity(${index}, this.value)"class="border border-3 rounded-2">
+            <div class="d-flex align-items-center">
+            <input type="number" min="1" value="${item.quantity}" onchange="updateQuantity(${index}, this.value)"class="border border-3 rounded-2 text-center mx-2">
             = $${itemTotal}
-            <button onclick="removeFromCart(${index})"class="rounded-pill">Eliminar</button>
+            <button onclick="removeFromCart(${index})"class="rounded-pill botones ms-3">Eliminar</button>
+            </div>
+            </div>
         `;
         cartItems.appendChild(listItem);
     });

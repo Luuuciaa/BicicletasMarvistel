@@ -327,7 +327,7 @@ section iframe {
 }
 
 
-button {
+.botones {
     background-color: #28a745;
     color: white;
     padding: 8px 16px;
@@ -335,7 +335,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.botones:hover {
     background-color: #218838;
 }
 .btn-vaciar ,.btn-comprar {
@@ -378,7 +378,7 @@ button:hover {
 }
 
 .cart input[type="number"] {
-    width: 50px; /* Ajusta el ancho según lo necesites */
+    width: 60px; /* Ajusta el ancho según lo necesites */
     margin-left: 5px; /* Espaciado a la izquierda si es necesario */
     text-align: center;
 }
